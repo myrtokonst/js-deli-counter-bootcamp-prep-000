@@ -1,10 +1,10 @@
-function takeANumber(katzDeliLine,name) { 
-    katzDeliLine.push(name)
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+var n = 0
+function takeANumber(katzDeliLine) {n++
+    katzDeliLine.push(n)
+    
+  return `Welcome. You are number ${n} in line.`
 }
 function nowServing(katzDeliLine) { var i=0; 
-while (i < katzDeliLine.length)
-{i++}
 if (katzDeliLine.length===0) {return "There is nobody waiting to be served!"}
 else {return `Currently serving ${katzDeliLine.shift()}.`}
 }
